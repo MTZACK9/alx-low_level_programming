@@ -13,7 +13,9 @@ int main(void)
 {
 	char putch[] = "_putchar";
 
-	for (int i = 0; i <= 7; i++)
+	int i;
+
+	for (i = 0; i <= 7; i++)
 	{
 		_putchar(putch[i]);
 	}
