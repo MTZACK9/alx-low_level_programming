@@ -18,6 +18,9 @@ void print_alphabet_x10(void)
 			al++;
 		}
 		_putchar('\n');
+
+		al = 'a';
+
 		i++;
 	}
 }
