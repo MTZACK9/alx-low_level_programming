@@ -4,7 +4,7 @@
  * print_diagonal - print a diagonal line
  *
  * @n: the number of \ charcter
-*/
+ */
 
 void print_diagonal(int n)
 {
@@ -18,7 +18,7 @@ void print_diagonal(int n)
 		{
 			for (space = 1; space <= pon; space++)
 				_putchar(' ');
-			_putchar(92); 
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
