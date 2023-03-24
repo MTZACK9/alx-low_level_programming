@@ -3,23 +3,22 @@
 /**
  * print_diagonal - print a diagonal line
  *
- * @n: is the number of times the \ character
- *     should be printed
+ * @n : number
 */
 
 void print_diagonal(int n)
 {
-	int postn, space;
+	int dr, space;
 
 	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		for (postn = 1; postn <= n; ++postn)
+		for (dr = 1; dr <= n; dr++)
 		{
-			for (space = 1; space <= postn; ++space)
+			for (space = 1; space < dr; space++)
 				_putchar(' ');
-			_putchar(92); /*is equal to '/' char*/
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
