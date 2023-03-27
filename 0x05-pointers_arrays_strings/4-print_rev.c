@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  *
  * print_rev - prints a string, in reverse.
@@ -17,5 +18,6 @@ void print_rev(char *s)
 	{
 		char temp = s[i];
 		s[i] = s[len - i - 1];
+		s[len - i - 1} = temp;
 	}
 }
