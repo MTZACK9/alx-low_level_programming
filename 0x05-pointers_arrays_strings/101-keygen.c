@@ -13,13 +13,16 @@
 
 int main(void)
 {
+	int i;
+
 	char password[PASSWORD_LENGTH + 1];
+
 	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+	
 	const int charset_size = sizeof(charset) - 1;
 
 	srand(time(NULL));
 
-	int i;
 
 	for  (i = 0; i < PASSWORD_LENGTH; i++)
 	{
