@@ -17,10 +17,10 @@ void print_rev(char *s)
 	--end;
 	while (end >= s)
 	{
-	putchar(*end);
+	_putchar(*end);
 	--end;
 	}
-	putchar('\n');
+	_putchar('\n');
 
 
 }
