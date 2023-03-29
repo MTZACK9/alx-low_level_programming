@@ -31,8 +31,7 @@ int main(void)
 
 	password[PASSWORD_LENGTH] = '\0';
 
-	/*printf("%s\n", password);*/
-	printf("Tada! Congrats\n");
+	printf("%s\n", password);
 
 	return (0);
 }
