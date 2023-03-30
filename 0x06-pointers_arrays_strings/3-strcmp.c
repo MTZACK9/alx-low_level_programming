@@ -21,7 +21,5 @@ int _strcmp(char *s1, char *s2)
 		s2++;
 	}
 
-	int res = strlen(s1) - strlen(s2);
-
-	return (res);
+	return (strlen(s1) - strlen(s2));
 }
