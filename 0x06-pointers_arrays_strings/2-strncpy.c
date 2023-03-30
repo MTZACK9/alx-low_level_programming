@@ -1,6 +1,6 @@
 #include "main.h"
 #include <string.h>
-
+#include <stdlib.h>
 /**
  * _strncpy - function that copies a string.
  *
