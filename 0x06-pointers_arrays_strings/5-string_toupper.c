@@ -1,6 +1,6 @@
 #include <ctype.h>
 #include <string.h>
-
+#include <stdlib.h>
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase.
  *
