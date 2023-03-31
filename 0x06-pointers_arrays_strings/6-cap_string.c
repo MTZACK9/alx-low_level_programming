@@ -5,20 +5,20 @@
 /**
  * cap_string - a function that capitalizes all words of a string
  *
- * @str: pointer to char input array
+ * @s: pointer to char input array
  *
  * Return: Capitalized string.
 */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	for (int i = 0; i < strlen(str); i++)
+	for (int i = 0; i < strlen(s); i++)
 	{
-		if (i == 0 || isspace(str[i - 1]) || strchr(",;.!?\"(){} ", str[i - 1]))
+		if (i == 0 || isspace(s[i - 1]) || strchr(",;.!?\"(){} ", s[i - 1]))
 		{
-			str[i] = toupper(str[i]);
+			s[i] = toupper(s[i]);
 		}
 	}
 
-	return (str);
+	return (s);
 }
