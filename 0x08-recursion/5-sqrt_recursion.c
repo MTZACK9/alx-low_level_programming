@@ -13,7 +13,7 @@ int sqrt_helper(int n, int low, int high)
 {
 	int mid;
 
-	if (high < low)
+	if (high == low)
 		return (-1);
 
 	mid = (low + high) / 2;
