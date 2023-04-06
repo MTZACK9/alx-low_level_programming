@@ -11,20 +11,19 @@
 
 int sqrt_helper(int n, int low, int high)
 {
-	int mid;
+	int guess, guess_squared;
 
-	if (high == low)
+	guess = (low + high) / 2;
+	guess_squared = guess * guess;
+
+	if (guess_squared == n)
+		return (guess);
+	else if (low == high)
 		return (-1);
-
-	mid = (low + high) / 2;
-
-	if (mid * mid == n)
-		return (mid);
-
-	if (mid * mid > n)
-		return (sqrt_helper(n, low, mid - 1));
+	else if (guess_squared < n)
+		return (sqrt_helper(n, guess + 1, high));
 	else
-		return (sqrt_helper(n, mid + 1, high));
+		return (sqrt_helper(n, low, guess - 1));
 }
 
 
