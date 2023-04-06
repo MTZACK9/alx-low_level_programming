@@ -37,10 +37,12 @@ int sqrt_helper(int n, int low, int high)
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	if (n == 1)		/*sqrt(1) == 1*/
+		return (1);
+	else if (n == 0)	/*sqrt(0) == 0*/
+		return (0);
+	else if (n < 0)		/*sqrt(-n) == -1 (NA)*/
 		return (-1);
-	if (n == 0 || n == 1)
-		return (n);
-
-	return (sqrt_helper(n, 1, n));
+	else
+		return (sqrt_helper(n, 1, n));
 }
