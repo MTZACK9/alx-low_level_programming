@@ -9,7 +9,7 @@
  * @ac: ac;
  * @av: av;
  *
- * return: NULL if ac == 0 or av == NULL
+ * Return: NULL if ac == 0 or av == NULL
  * pointer to a new string, or NULL if it fails.
  */
 
