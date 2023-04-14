@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * memset - fills memory with a constant byte
+ * _memset - fills memory with a constant byte
  *
  * @s: input pointer that represents memory.
  * @b: characters to fill
@@ -11,7 +11,7 @@
  * Return: A pointer to the filled memory area
 */
 
-char *memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
@@ -44,7 +44,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (ptr == NULL)
 		return (NULL);
 
-	memset(ptr, 0, total_size);
+	_memset(ptr, 0, total_size);
 
 	return (ptr);
 }
