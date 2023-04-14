@@ -44,13 +44,13 @@ char *multiply(char *s1, char *s2)
 
 	result = calloc(len1 + len2 + 1, sizeof(char));
 
-	if (!reslut)
+	if (!result)
 		return (NULL);
 
 	for (i = len1 - 1; i >= 0; i--)
 	{
 		carry = 0;
-		for (j = len2; j >= 0)
+		for (j = len2; j >= 0; j--)
 		{
 			product = (s1[i] - '0') * (s2[j] - '0') + carry + result[i + j + 1];
 			carry = product / 10;
@@ -86,7 +86,7 @@ int main(int argc, char **argv)
 {
 	char *s1, *s2, *result;
 
-	if (argc != 3 || !isdigit(argv[1]) || !is_digit(argv[2]))
+	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 	{
 		printf("Error\n");
 		return (98);
