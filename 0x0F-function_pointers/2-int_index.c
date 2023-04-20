@@ -13,20 +13,22 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
-	bool ch;
-
-	if (size <= 0)
-		return (-1);
+	int index;
+	bool y;
 
 	if (array != NULL && size > 0 && cmp != NULL)
 	{
-		for (i = 0; i < size; i++)
+		if (size <= 0)
+			return (-1);
+
+		for (index = 0; index < size; index++)
 		{
-			ch = cmp(array[i]);
-			if (ch != 0)
-				return (i);
+			y = cmp(array[index]);
+			if (y == TRUE)
+				return (index);
 		}
 	}
+
 	return (-1);
+
 }
