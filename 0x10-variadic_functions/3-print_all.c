@@ -18,13 +18,14 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
+	char *sep;
+	int i;
+	char *s;
 
 	va_start(args, format);
 
-	char *sep = "";
-	int i = 0;
-	char c;
-	char *s;
+	i = 0;
+	sep = "";
 
 	while (format && format[i])
 	{
