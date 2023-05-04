@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -23,7 +24,7 @@ unsigned int _atoi(char ch)
 
 unsigned int _strlen(const char *str)
 {
-	int i = 0;
+	unsigned int i = 0;
 
 	while (str[i] != '\0')
 		i++;
@@ -45,8 +46,8 @@ unsigned int binary_to_uint(const char *b)
 	int index;
 	unsigned int res = 0, base2 = 1, num = 0;
 
-	if (b == NULL)
-		return (0);
+	/*if (b == NULL)
+		return (0);*/
 
 	for (index = _strlen(b) - 1; index >= 0; index--)
 	{
