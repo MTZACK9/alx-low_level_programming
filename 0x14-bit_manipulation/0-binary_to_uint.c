@@ -1,4 +1,4 @@
-
+#include <stddef.h>
 #include "main.h"
 
 /**
@@ -46,8 +46,8 @@ unsigned int binary_to_uint(const char *b)
 	int index;
 	unsigned int res = 0, base2 = 1, num = 0;
 
-	/*if (b == NULL)
-		return (0);*/
+	if (b == NULL)
+		return (0);
 
 	for (index = _strlen(b) - 1; index >= 0; index--)
 	{
